@@ -1,0 +1,18 @@
+apiVersion: api.my.domain/v1alpha1
+kind: Mongo
+metadata:
+  labels:
+    app.kubernetes.io/name: mongo
+    app.kubernetes.io/instance: mongo-sample
+    app.kubernetes.io/part-of: mongo-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: mongo-operator
+  name: mongo-sample1
+  namespace: flows
+spec:
+  port: 27017
+  userName: "username"
+  password: "password"
+  cpu: 6
+  size: 1
+  # TODO(user): Add fields here
